@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.FSDragon.cl4_20.current_loop" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20sp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Resistance"
+            android:textSize="@dimen/write_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Temperature"
+            android:textSize="@dimen/write_text"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <EditText
+            android:id="@+id/etResistance"
+            android:layout_width="0sp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#00ff00"
+            android:gravity="center"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/etTemperature"
+            android:layout_width="0sp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#ffff00"
+            android:focusable="false"
+            android:gravity="center"
+            android:inputType="numberDecimal|numberSigned" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_clear"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/clear"
+            android:textSize="@dimen/bt_text"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <RadioButton
+            android:id="@+id/rbt_pt100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="select_pt"
+            android:text="@string/pt100"
+            android:layout_marginRight="140dp"
+            android:layout_marginEnd="140dp"
+            android:textSize="@dimen/bt_text" />
+
+        <RadioButton
+            android:id="@+id/rbt_pt1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="select_pt"
+            android:text="@string/pt1000"
+            android:textSize="@dimen/bt_text" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CL4-20</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="calculate">Calculate</string>
+	<string name="clear">Clear</string>
+	<string name="from_x_to_mA">X->mA</string>
+	<string name="from_mA_to_percent">mA->%</string>
+	<string name="from_percent_to_mA">%->mA</string>
+	<string name="to">x</string>
+	<string name="positive">Positive</string>
+	<string name="negative">Negative</string>
+	<string name="correlation">Correlation</string>
+	<string name="miliAmpere">mA</string>
+	<string name="percentage">%</string>
+	<string name="minimum">Min:</string>
+	<string name="current">Curr:</string>
+	<string name="maximum">Max:</string>
+	<string name="min_mA">4.0</string>
+	<string name="max_mA">20.0</string>
+	<string name="min_p">0.0</string>
+	<string name="max_p">100.0</string>
+	<string name="negative_correlation">Negative Correlation</string>
+	<string name="Current_Loop">Current Loop (4-20mA)</string>
+	<string name="Temperature_Convertion">PT100 / PT1000</string>
+	<string name="Temperature">Temperature °C</string>
+	<string name="Resistance">Resistance Ω</string>
+	<string name="convert">Convert</string>
+	<string name="pt100">Pt100</string>
+	<string name="pt1000">Pt1000</string>
+</resources>
